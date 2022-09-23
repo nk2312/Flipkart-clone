@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+  }
+ 
+header{
+   
+    background-color:var(--main-bg-color);
+    position:sticky;
+    top:0px;
+    
+}
+
+.logo{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:0px 12px;
+    margin-left:180px;
+}
+
+nav{ 
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Anton', sans-serif;;
+}
+
+nav ul{ 
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    
+}
+
+nav ul li{
+    list-style-type: none; 
+    padding: 0 22px;; 
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: black;
+    font-weight:bold;
+    font-size:larger
+}
+
+.button{
+    width:100px;
+    height:35px;
+    font-family: 'Anton', sans-serif;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    color:blue;
+}
+input{
+    width:40vw;
+    height:35px;
+}
+
+.slider img{
+    width:80vw;
+    height:40vh;
+    margin-top:12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    margin-left:110px;
+}
+.redline{
+    border:1px solid red;
+    animation: line 5s ease-out 1s infinite ;
+}
+
+@keyframes line {
+    0%{
+        width:0px;
+    }
+    50%{
+        width:70vw;
+    }
+    100%{
+        width:100vw;
+    }
+}
+
+.container{
+    /* min-height: calc(100vh - 12vh - 60px); */
+    width:95vh;
+
+}
+.card{
+    height: 280px;
+    border: 1px solid rgb(223, 217, 217);
+    margin:15px 60px;
+    width:90vw;
+}
+.header{
+    border: 1px solid  rgb(247, 239, 239);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h2{
+    margin:10px;
+}
+
+.header  button{
+    border:1px solid white;
+    background-color:var(--main-bg-color);
+    color:white;
+    border-radius:5px;
+    font-weight: bold;
+    width:100px;
+    height:34px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header button:hover{
+    font-size: larger;
+    color:black;
+}
+
+.list {
+    transition: width 3s;
+}
+.list img:hover{
+     width: 280px;
+    /* transform: rotate(25deg);  */
+}
+
+/* .list img{
+    animation: cardImages 3s linear 1s infinite ;
+}
+
+@keyframes cardImages {
+    from{
+        width:196px;
+        transform:rotate(0deg);
+
+    }
+    to{
+        width:280px;
+        transform: rotate(25deg);
+    }
+} */
+
+.card-items{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow:scroll;
+}
+.p{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p1{
+
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.p2{
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p3{
+    color:rgb(183, 171, 171);
+}
+footer{
+    background-color: var(--main-bg-color);
+    color:white;
+    height:12vh;
+    font-family: 'Titillium Web', sans-serif;;
+}
+
+nav div img{
+    width:90px; 
+    animation-name:logo;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes logo {
+    from {
+        width:90px;
+        transform: rotate(0deg);
+    }
+    to {
+        width:20px;
+        transform: rotate(360deg);
+    }
+}
+

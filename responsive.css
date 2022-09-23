@@ -1,0 +1,20 @@
+@media screen and (max-width:900px){
+    .logo img{
+        visibility: hidden;
+        animation-play-state: paused;
+    }
+    
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .button{
+        margin: 12px;
+    }
+    input{
+        margin: 12px;
+    }
+}
